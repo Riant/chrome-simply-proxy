@@ -1,6 +1,6 @@
 {
-  "name": "chrome-host-proxy",
-  "version": "0.1.0",
+  "name": "chrome-simply-proxy",
+  "version": "0.1.5",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,8 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "element-ui": "^2.8.2",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.11.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
@@ -19,6 +20,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.19.0",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
   }
 }

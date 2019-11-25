@@ -1,0 +1,44 @@
+html, body, h1, h2, h3, h4, pre { margin: 0; }
+body, input, textarea, table, select { font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei; }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $grayLightest;
+}
+
+h1, h2, h3 { font-weight: normal; }
+h1 { font-size: 30px; }
+h2 { font-size: 18px; }
+
+h1 { font-size: 24px; font-weight: bold; position: relative; margin-bottom: 15px;
+    > span { display: inline-block; font-size: 14px; font-weight: normal; margin-left: 15px; }
+    small { position: absolute; bottom: .2em; right: 0; text-align: right; font-size: 14px; font-weight: normal;
+      > * { display: inline-block; margin-left: 10px; }
+      .el-select { width: 100px; margin-right: 20px; }
+    }
+  }
+
+table { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: 13px;
+  border: 1px solid #DDD; color: #444;
+  thead { background: $grayLightest; }
+  td, th { border-top: 1px solid #DDD; padding: 10px; }
+  th { text-align: left; }
+}
+
+a { text-decoration: none; color: #333;
+  &:hover { color: #409EFF; }
+}
+
+code, pre { font-family: "Source Code Pro","DejaVu Sans Mono","Ubuntu Mono",Consolas,Courier,"PingFang SC","Microsoft YaHei"; }
+p { margin: .5em 0;
+  &:first-child { margin-top: 0; }
+}
+
+code { display: inline-block; line-height: 1.1; background: #EEE; border-radius: 3px; padding: 3px 5px 2px; }
+
+.app {
+  .el-alert .el-alert__description { margin: 1em 0; }
+  .el-textarea.bulkRules textarea {
+    font-family: "Source Code Pro","DejaVu Sans Mono","Ubuntu Mono",Consolas,Courier,"PingFang SC","Microsoft YaHei";
+  }
+}
