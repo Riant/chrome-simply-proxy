@@ -12,8 +12,10 @@ Vue.config.productionTip = false
 Vue.use(VueI18n)
 Vue.use(ElementUI, {size: 'small', zIndex: 3000})
 
+let defaultLanguage = navigator.language
+
 const i18n = new VueI18n({
-  locale: 'zh-CN', // set locale
+  locale: defaultLanguage, // set locale
   messages: Local, // set locale messages
 })
 

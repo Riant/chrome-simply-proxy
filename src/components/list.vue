@@ -22,7 +22,7 @@
       tbody
         tr(v-for='it in showList')
           td: el-checkbox(v-model='it.enable' @change='statusChanged(it)')
-          td.title: a(href='#' @click.prevent='statusChanged(it, true)') {{it.domain}}
+          td.title: a(:href='`http://${it.domain}`' target='_blank') {{it.domain}}
           td {{it.target}}
           td {{it.tags.join(', ')}}
           td.align-r(v-if='action') {{it.order}}
